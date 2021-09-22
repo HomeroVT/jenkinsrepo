@@ -8,6 +8,7 @@ pipeline {
                 sh '''#!/bin/bash
                     pwd
                     ls -ltrah
+                    echo "Hola mundo" > newfile.txt
                 '''
             }
         }
@@ -20,7 +21,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh '''
-                    ssh ec2-user@18.204.18.81
+                    scp newfile.txt ec2-user@18.204.18.81:/home/ec2-user/
                     ls -ltrah
                 '''
             }
