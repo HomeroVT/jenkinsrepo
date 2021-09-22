@@ -9,8 +9,6 @@ pipeline {
                     pwd
                     whoami
                     ls -ltrah
-                    echo "Hola mundo" > newfile.txt
-                    ls -ltrah
                 '''
             }
         }
@@ -23,8 +21,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh '''
-                    scp newfile.txt ec2-user@18.204.18.81:/home/ec2-user/
-                    ls -ltrah
+                   echo "Hola mundo"
                 '''
             }
         }
