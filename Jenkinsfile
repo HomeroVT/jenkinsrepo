@@ -7,6 +7,7 @@ pipeline {
                 echo 'Building..'
                 sh '''#!/bin/bash
                     pwd
+                    whoami
                     ls -ltrah
                     echo "Hola mundo" > newfile.txt
                     ls -ltrah
