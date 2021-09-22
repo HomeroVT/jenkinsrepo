@@ -9,6 +9,7 @@ pipeline {
                     pwd
                     ls -ltrah
                     echo "Hola mundo" > newfile.txt
+                    ls -ltrah
                 '''
             }
         }
