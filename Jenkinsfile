@@ -22,6 +22,7 @@ pipeline {
                 echo 'Deploying....'
                 sh '''
                    echo "Hola mundo"
+                   sh new-script.sh
                 '''
             }
         }
